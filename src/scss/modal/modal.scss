@@ -1,0 +1,14 @@
+@import '../variables/setVariables';
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      background-color: rgba(0,0,0,0.7);
+      color: white;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

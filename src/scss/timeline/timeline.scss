@@ -1,0 +1,13 @@
+@import '../variables/setVariables';
+
+.timeline-container {
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  top: 0%;
+  border: 1px solid $pr-pale-gray;
+  background-color: white;
+  ol, ul {
+    list-style: none;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Test Aerial</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="map-container">
+      <!-- @timeline-begin -->
+      <div class="timeline-container">
+        <section class="cd-horizontal-timeline">
+        	<div class="timeline">
+        		<div class="events-wrapper">
+        			<div class="events">
+        				<ol>
+        					<li><a href="#0" data-date="16/01/2014" class="selected" id="layer1">16 Jan</a></li>
+        					<li><a href="#0" data-date="14/03/2014" id="layer2">14 Mar</a></li>
+        					<li><a href="#0" data-date="28/02/2015" id="layer2">28 Feb</a></li>
+                </ol>
+
+        				<span class="filling-line" aria-hidden="true"></span>
+        			</div> <!-- .events -->
+        		</div> <!-- .events-wrapper -->
+
+        		<ul class="cd-timeline-navigation">
+        			<li><a href="#0" class="prev inactive">Prev</a></li>
+        			<li><a href="#0" class="next">Next</a></li>
+        		</ul> <!-- .cd-timeline-navigation -->
+        	</div> <!-- .timeline -->
+      </div>
+      <!-- @timeline-end -->
+      <!-- @map-begin -->
+      <div id="map" class="map"></div>
+      <!-- @map-end -->
+      <!-- @modal-begin -->
+      <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Made by <strong>Ivan Martinez Laborda</strong></p>
+              <p><a href="http://www.github.com/ivanmlaborda">http://www.github.com/ivanmlaborda</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- @modal-end -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Popper.js -->
+  <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+  <!-- Leaflet -->
+  <script src="bower_components/leaflet/dist/leaflet.js"></script>
+  <!-- Bootstrap -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Modernizr -->
+  <script src="js/libs/modernizr.js"></script>
+  <!-- Custom Scripts -->
+  <script src="js/timeline.js"></script>
+  <script src="js/mapping-scripts.js"></script>
+
+</body>
+
+</html>
